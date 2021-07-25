@@ -1,3 +1,81 @@
+local Credits = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Logo = Instance.new("ImageLabel")
+local Powerd = Instance.new("TextLabel")
+local By = Instance.new("TextLabel")
+
+--Properties:
+
+Credits.Name = "Credits"
+Credits.Parent = game.CoreGui
+Credits.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = Credits
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Frame.Position = UDim2.new(0.49999997, 0, 0.499312252, 0)
+Frame.Size = UDim2.new(0, 151, 0, 144)
+
+Logo.Name = "Logo"
+Logo.Parent = Frame
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.Position = UDim2.new(0.00662255287, 0, 0, 0)
+Logo.Size = UDim2.new(0, 147, 0, 144)
+Logo.Image = "rbxassetid://7151908854"
+
+Powerd.Name = "Powerd"
+Powerd.Parent = Frame
+Powerd.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+Powerd.BackgroundTransparency = 1.000
+Powerd.Position = UDim2.new(0.315450639, 0, 0, 0)
+Powerd.Size = UDim2.new(0, 308, 0, 53)
+Powerd.Font = Enum.Font.SourceSans
+Powerd.Text = ""
+Powerd.TextColor3 = Color3.fromRGB(255, 170, 0)
+Powerd.TextScaled = true
+Powerd.TextSize = 14.000
+Powerd.TextWrapped = true
+
+By.Name = "By"
+By.Parent = Frame
+By.BackgroundColor3 = Color3.fromRGB(255, 170, 0)
+By.BackgroundTransparency = 1.000
+By.Position = UDim2.new(0.401287556, 0, 0.50000006, 0)
+By.Size = UDim2.new(0, 192, 0, 42)
+By.Font = Enum.Font.SourceSans
+By.Text = ""
+By.TextColor3 = Color3.fromRGB(255, 170, 0)
+By.TextScaled = true
+By.TextSize = 14.000
+By.TextWrapped = true
+
+-- Scripts:
+
+local function VWZPO_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+	wait(0.5)
+	--Functions
+	local function typeWrite(msg, obj)
+		for i = 1, #msg do
+			obj.Text = string.sub(msg, 1, i)
+			wait(0.05)
+		end
+	end
+	script.Parent:TweenSize(UDim2.new(0, 466,0, 144))
+	wait(2)
+	local powerdText = "Powerd by Monkey breaker"
+	local byText = "By Kuri#1686"
+	
+	typeWrite(powerdText, script.Parent.Powerd)
+	wait(1)
+	typeWrite(byText, script.Parent.By)
+	wait(2)
+	script.Parent:Destroy()
+end
+coroutine.wrap(VWZPO_fake_script)()
+
+
 local res = {}
 local MonkeyBreaker = {}
 MonkeyBreaker.Doors = {}
