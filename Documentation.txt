@@ -8,7 +8,10 @@ lib.Vehicles
 lib.Misc
 lib.Advanced
 
-The Doors category just stores all doors so that you can write a open doors script!
+The Doors category just stores all doors so that you can write a open doors script, Here is a example
+for i,v in next, lib.Doors do 
+    lib.Misc.OpenDoor(v)
+end
 
 lib.Weapons contains weapon mods, Here is a example:
 
@@ -24,6 +27,12 @@ lib.Misc contains misc features which are not necessary such as: Send message, S
 
 lib.Misc.BypassWalkSpeed()
 lib.Misc.SetWalkSpeed(150)
+
+lib.Misc.PlaySound("FireworkBang", {
+   Source = game:GetService("Players").LocalPlayer.Character, 
+   Volume = math.huge, 
+   Multi = true,
+}, false)
 
 lib.Advanced just contains the remote event for firing remotes with a hash!
 
@@ -55,3 +64,7 @@ BypassWalkSpeed
 BypassJumpPower
 SetWalkSpeed
 SetJumpPower
+Fireworks
+OpenDoor
+AddCash
+PlaySound
