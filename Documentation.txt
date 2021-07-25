@@ -1,2 +1,57 @@
 To import the library:
-local lib = loadstring(game:HttpGet"https://pastebin.com/raw/EzwZekqW")()
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyBreaker/main/library.lua"))()
+
+There are 6 Categories and they are:
+lib.Doors
+lib.Weapons
+lib.Vehicles
+lib.Misc
+lib.Advanced
+
+The Doors category just stores all doors so that you can write a open doors script!
+
+lib.Weapons contains weapon mods, Here is a example:
+
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyBreaker/main/library.lua"))()
+lib.Weapons.SetFireRate(100)
+
+lib.Vehicles contains vehicle mods, Here is a example:
+
+local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/KuriWasTaken/MonkeyBreaker/main/library.lua"))()
+lib.Vehicles.SetVehicleHeight(200)
+
+lib.Misc contains misc features which are not necessary such as: Send message, SetTeamSwitch, delay, BypassWalkSpeed etc... Here is a example:
+
+lib.Misc.BypassWalkSpeed()
+lib.Misc.SetWalkSpeed(150)
+
+lib.Advanced just contains the remote event for firing remotes with a hash!
+
+Here is a list of all features in the different categories:
+
+lib.Weapons:
+
+SetFireRate
+MakeAutomatic(Bool)
+SetBulletSpread
+SetReloadTime
+SetAmmo
+SetCamRecoil
+
+lib.Vehicles:
+
+SetVehicleHeight
+SetVehicleSpeed
+SetVehicleTurnSpeed
+SetTirePopDuration
+ToggleInjanHorn(Bool)
+
+lib.Misc:
+
+SendMessage
+SetTeanSwitchDelay
+ToggleNoWait(Bool)
+BypassWalkSpeed
+BypassJumpPower
+SetWalkSpeed
+SetJumpPower
