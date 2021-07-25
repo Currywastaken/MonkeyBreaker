@@ -1,3 +1,4 @@
+print("Loading Library")
 _IXhMFg9Q2IQQ9mgE, Protected_by_MoonSecV2, Discord = 'discord.gg/gQEH2uZxUk'
 
 
