@@ -42,29 +42,29 @@ lib.Weapons:
 
 SetFireRate
 MakeAutomatic(Bool)
-SetBulletSpread
-SetReloadTime
-SetAmmo
-SetCamRecoil
+SetBulletSpread(int)
+SetReloadTime(int)
+SetAmmo(int)
+SetCamRecoil(int)
 
 lib.Vehicles:
 
-SetVehicleHeight
-SetVehicleSpeed
-SetVehicleTurnSpeed
-SetTirePopDuration
+SetVehicleHeight(int)
+SetVehicleSpeed(int)
+SetVehicleTurnSpeed(int)
+SetTirePopDuration(int)
 ToggleInjanHorn(Bool)
 
 lib.Misc:
 
-SendMessage
-SetTeanSwitchDelay
+SendMessage(str)
+SetTeanSwitchDelay(int)
 ToggleNoWait(Bool)
 BypassWalkSpeed
 BypassJumpPower
-SetWalkSpeed
-SetJumpPower
+SetWalkSpeed(int)
+SetJumpPower(int)
 Fireworks
 OpenDoor
-AddCash
-PlaySound
+AddCash(int, str)
+PlaySound(str, table)
